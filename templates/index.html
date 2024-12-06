@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Healing Hope Medical Center</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    
+    {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/hospital.png' %}" rel="icon">
+  <link href="{% static 'assets/img/services.jpg' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.scss' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medicio
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="d-none d-md-flex align-items-center">
+          <i class="bi bi-clock me-1"></i> Monday - Monday, 8AM to 10PM
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-phone me-1"></i> Call us now +254 769 989 210
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-end">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img src="{% static 'assets/img/cardiology.jpg' %}" alt="">
+          <!-- Uncomment the line below if you also wish to use a text logo -->
+          <!-- <h1 class="sitename">Medicio</h1>  -->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{% url 'index' %}" class="active">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+{#            <li><a href="{% url 'departments' %}">Departments</a></li>#}
+            <li><a href="{% url 'doctors' %}">Doctors</a></li>
+            <li><a href="{% url 'image' %}">Other Doctors</a></li>
+            <li><a href="{% url 'upload' %}">Upload Doctor</a></li>
+{#            <li class="dropdown"><a href="#"><span>Our Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>#}
+{#              <ul>#}
+{#                <li><a href="#">Dropdown 1</a></li>#}
+{#                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>#}
+{#                  <ul>#}
+{#                    <li><a href="#">Deep Dropdown 1</a></li>#}
+{#                    <li><a href="#">Deep Dropdown 2</a></li>#}
+{#                    <li><a href="#">Deep Dropdown 3</a></li>#}
+{#                    <li><a href="#">Deep Dropdown 4</a></li>#}
+{#                    <li><a href="#">Deep Dropdown 5</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{#                <li><a href="#">Dropdown 2</a></li>#}
+{#                <li><a href="#">Dropdown 3</a></li>#}
+{#                <li><a href="#">Dropdown 4</a></li>#}
+{#              </ul>#}
+{#            </li>#}
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="cta-btn" href="#appointment">Book Your Appointment</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'assets/img/departments-1.jpg' %}" alt="">
+          <div class="container">
+            <h2>Welcome to Healing Hope Medical Center</h2>
+            <p>Welcome to Healing Hope Medical Center, where compassionate care meets cutting-edge medical expertise. .</p>
+            <a href="#about" class="btn-get-started">More Information About Us</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/health3.jpg' %}" alt="">
+          <div class="container">
+            <h2>Terms of Service</h2>
+            <p>We are dedicated to providing a warm, welcoming environment that fosters healing and well-being for every patient. Our team of experienced doctors, nurses, and support staff are committed to personalized care, offering a wide range of services designed to meet the unique needs of our community.</p>
+            <a href="#about" class="btn-get-started">More Information About Us</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/health4.jpg' %}" alt="">
+          <div class="container">
+            <h2>Advanced Treatments And Therapies</h2>
+            <p>From preventative care and routine checkups to advanced treatments and therapies, we prioritize your health and comfort. At Healing Hope, we believe in nurturing not only the body but also the mind and spirit, creating a space where every patient feels valued and supported on their journey to recovery.</p>
+            <a href="#about" class="btn-get-started">More Information About Us</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-heartbeat icon"></i></div>
+              <h4><a href="" class="stretched-link">Our Range of Healthcare Services</a></h4>
+              <p>We are committed to providing the highest quality care, with a focus on your overall health and well-being.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-pills icon"></i></div>
+              <h4><a href="" class="stretched-link">Pharmacy Services</a></h4>
+              <p>We provide guidance on proper usage and dosage to ensure that you receive the right treatment every time.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-thermometer icon"></i></div>
+              <h4><a href="" class="stretched-link">Personalized Care Plans</a></h4>
+              <p>We believe in working closely with each patient to develop a tailored care plan.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-dna icon"></i></div>
+              <h4><a href="" class="stretched-link">Genetic Counselling</a></h4>
+              <p>With the latest advancements in genetic testing, we can provide valuable insights into your health.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section accent-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>In an emergency? Need help now?</h3>
+              <p>Our 24/7 emergency services are designed to provide immediate, expert medical attention, ensuring you or your loved ones receive the best possible care during critical times. Whether it’s a minor injury or a life-threatening condition, we’re here to help.</p>
+              <a class="cta-btn" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p>Healing Hope Medical Center is dedicated to delivering exceptional healthcare with compassion, integrity, and excellence. </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/hero-carousel/health4.jpg' %}" class="img-fluid" alt="">
+{#            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>#}
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Our mission.</h3>
+            <p class="fst-italic">
+              Our mission is to create a healing environment that nurtures both physical and emotional well-being, serving our community with a wide range of comprehensive medical services. At Healing Hope, we prioritize patient-centered care, fostering a supportive and understanding atmosphere for all.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Comprehensive Healthcare Services.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Experienced and Compassionate Team.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>State-of-the-Art Facilities.</span></li>
+            </ul>
+            <p>
+              At Healing Hope Medical Center, we are committed to creating a supportive environment where every patient feels valued and cared for. Our goal is to provide accessible, high-quality healthcare that addresses both immediate medical needs and long-term wellness. Whether you’re here for a routine checkup or a specialized procedure, we’re here to guide you every step of the way, ensuring a positive experience focused on your health and well-being.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-user-md flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Doctors</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="far fa-hospital flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Departments</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-flask flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Research Labs</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-award flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Awards</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{% static 'assets/img/hero-carousel/health0.jpg' %}" alt=""></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h3>Our Commitment</h3>
+            <p>We believe in treating each patient with respect and empathy, ensuring personalized attention tailored to individual needs. Our team of experienced professionals works collaboratively to provide reliable and innovative healthcare, from routine checkups to specialized treatments.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-hand-holding-medical flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Compassionate Support for Every Patient</a></h4>
+                <p>Our team is always ready to lend a helping hand, offering guidance, comfort, and care at every stage of your healthcare journey. We are here to listen, assist, and ensure you feel supported throughout your experience with us.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Prepared for Any Emergency</a></h4>
+                <p>Our healthcare providers are trained in emergency response, and our medical facilities are designed to provide immediate care for urgent situations. Your safety and well-being are our top priorities, and we are always prepared to assist when needed.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+              <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Symbol of Healing and Hope</a></h4>
+                <p>At Healing Hope Medical Center, every patient’s journey toward recovery is important to us, and we are here to support and guide you through the process.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+              <i class="fa-solid fa-lungs flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Breathe Easy with Our Respiratory Care</a></h4>
+                <p>Our expert pulmonologists and state-of-the-art equipment are here to help you breathe easier and live better.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>At Healing Hope Medical Center, we offer a comprehensive range of medical services to meet the diverse needs of our patients. From preventative care to specialized treatments, our experienced medical team is here to support you every step of the way.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Our Range of Healthcare Services</h3>
+              </a>
+              <p>From preventative care to specialized treatments, our experienced medical team is here to support you every step of the way.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-pills"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Cardiovascular Care</h3>
+              </a>
+              <p>Our advanced cardiovascular services ensure that your heart stays healthy and strong. </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-hospital-user"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Personalized Care Plans</h3>
+              </a>
+              <p>We believe in working closely with each patient to develop a tailored care plan.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Genetic Counseling and Testing</h3>
+              </a>
+              <p>With the latest advancements in genetic testing, we can provide valuable insights into your health. </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-wheelchair"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Mobility Assistance</h3>
+              </a>
+              <p>With the latest advancements in genetic testing, we can provide valuable insights into your health. </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-notes-medical"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Comprehensive Wellness Programs</h3>
+              </a>
+              <p>We offer a variety of wellness programs designed to support your overall health. </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>MAKE AN APPOINTMENT</h2>
+        <p>Booking an appointment at Healing Hope Medical Center is quick and easy.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="department" id="department" class="form-select" required="">
+                <option value="">Select Department</option>
+                <option value="Department 1">Cardiology</option>
+                <option value="Department 2">Neurology</option>
+                <option value="Department 3">Pediatrics</option>
+              </select>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="doctor" id="doctor" class="form-select" required="">
+                <option value="">Select Doctor</option>
+                <option value="Doctor 1">Dr. Adebayo Chike</option>
+                <option value="Doctor 2">Dr. Amina Dube</option>
+                <option value="Doctor 3">Dr. Kwame Obasi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+          </div>
+          <div class="mt-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="text-center"><button type="submit">Make an Appointment</button></div>
+          </div>
+        </form>
+
+      </div>
+
+    </section><!-- /Appointment Section -->
+
+    <!-- Tabs Section -->
+    <section id="tabs" class="tabs section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Departments</h2>
+        <p>Our hospital offers a wide range of specialized departments, including Cardiology, Neurology, Pediatrics, Orthopedics, and Emergency Care. Each department is staffed with expert medical professionals and equipped with the latest technology to provide comprehensive and compassionate care to our patients. Whatever your healthcare needs, we have a dedicated team ready to assist you.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">Cardiology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">Neurology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">Hepatology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">Pediatrics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">Ophthalmologists</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tabs-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Cardiology</h3>
+                    <p class="fst-italic">Cardiology is the branch of medicine that focuses on diagnosing and treating heart-related conditions.</p>
+                    <p>At Healing Hope Medical Center, our experienced cardiologists specialize in managing a wide range of heart diseases, including coronary artery disease, heart failure, arrhythmias, and high blood pressure. With state-of-the-art diagnostic tools and personalized care plans, we are committed to improving heart health and providing our patients with the best possible outcomes. Whether it's prevention, treatment, or ongoing management, our cardiology team is here to support your heart health every step of the way.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/cardiology.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Neurology</h3>
+                    <p class="fst-italic"></p>
+                    <p></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/cardiology.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hepatology</h3>
+                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/cardiology.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pediatrics</h3>
+                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-4.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ophthalmologists</h3>
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/departments-5.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Tabs Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Below are the testimonials</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" >
+            <p>
+              <i class=" bi bi-quote quote-icon-left"></i>
+                <span>I have been incredibly impressed by the professionalism and quality of care at this hospital.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/african1.jpg' %}" class="testimonial-img" class="img-fluid" style="width: 200px; height: 200px;" alt="">
+                <h3>John K. Nkrumah</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As a designer, I appreciate creativity, and the innovative healthcare solutions provided by this hospital are truly inspiring.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/african2.jpg' %}" class="testimonial-img" class="img-fluid" style="width: 200px; height: 200px;" alt="">
+                <h3>Amina O. Adamu</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The care and attention to detail are phenomenal. It’s reassuring to know that such an excellent healthcare provider exists in our community.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/african3.jpg' %}" class="testimonial-img" class="img-fluid" style="width: 200px; height: 200px;" alt="">
+                <h3>Kwame A. Owusu</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As a freelancer, I don’t always have a set schedule, but when it comes to healthcare, I trust this hospital to provide flexible and efficient services.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/african4.jpg' %}" class="testimonial-img" class="img-fluid" style="width: 200px; height: 200px;" alt="">
+                <h3>Lindiwe M. Nkosi</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Their quick, reliable, and compassionate care ensures that I can keep my business running smoothly without worrying about my health.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/african6.jpg' %}" class="testimonial-img" alt="" class="img-fluid" style="width: 200px; height: 200px;">
+                <h3>Chidi E. Okoro</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Doctors</h2>
+        <p>At Healing Hope Medical Center, our doctors are the heart of our healthcare team. Each physician brings extensive knowledge, compassion, and a commitment to patient-centered care, ensuring you receive the highest quality treatment. From routine checkups to specialized care, our doctors are here to support your health journey, providing expertise across various medical fields. Your well-being is our priority, and we are dedicated to guiding you every step of the way toward a healthier future.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/doctors/doc1.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr.Kwame Mensa</h4>
+                <span>Chief Medical Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/doctors/doc2.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr Elizabeth Ngunge</h4>
+                <span>Anesthesiologist</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/doctors/doc3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr.Kofi Adebayo</h4>
+                <span>Cardiology</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/doctors/doc4.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.google.com/search?client=firefox-b-d&q=linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr.Zola Ndlovu</h4>
+                <span>Neurosurgeon</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Doctors Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Explore our gallery to get a glimpse into life at Healing Hope Medical Center.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/one.jpg' %}"><img src="{% static 'assets/img/gallery/one.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/two.jpg' %}"><img src="{% static 'assets/img/gallery/two.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/three.jpg' %}"><img src="{% static 'assets/img/gallery/three.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/four.jpg' %}"><img src="{% static 'assets/img/gallery/four.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/five.jpg' %}"><img src="{% static 'assets/img/gallery/five.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/six.jpg' %}"><img src="{% static 'assets/img/gallery/six.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/seven.jpg' %}"><img src="{% static 'assets/img/gallery/seven.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/eight.jpg' %}"><img src="{% static 'assets/img/gallery/eight.jpg' %}" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>At Healing Hope Medical Center, we offer a variety of services to meet your healthcare needs. Below is a breakdown of services that are provided for free, as well as additional packages with pricing based on the level of care and specialized treatments.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free</h3>
+              <h4><sup>KSH</sup>0.OO<span> / month</span></h4>
+              <ul>
+                <li>Basic health consultation</li>
+                <li>Blood pressure check</li>
+                <li>Health Education sessions</li>
+                <li class="na">Nutritional Advice/coaching</li>
+                <li class="na">Access to supportive groups</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Basic Care</h3>
+              <h4><sup>KSH</sup>7,000<span> / month</span></h4>
+              <ul>
+                <li>Doctor's consultation</li>
+                <li>General physical examination</li>
+                <li>Basic Lab tests(blood etc)</li>
+                <li>Flu shots and vaccinations</li>
+                <li class="na">Minor wound care</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              <h3>Comprehensive Care</h3>
+              <h4><sup>KSH</sup>15,000<span> / month</span></h4>
+              <ul>
+                <li>Specialized consultations</li>
+                <li>Diagnostic imaging(eg X-RAY)</li>
+                <li>Advanced lab tests(eg liver panels)</li>
+                <li>Health screenings(eg Diabetes)</li>
+                <li>Routine preventive care</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-item">
+              <span class="advanced">Advanced</span>
+              <h3>Premium Care</h3>
+              <h4><sup>KSH</sup>50,000<span> / session</span></h4>
+              <ul>
+                <li>Full health assessment and personalized care plan</li>
+                <li>Access to specialist consultation</li>
+                <li>MRI and CT scans</li>
+                <li>Post-surgical follow-up care</li>
+                <li>In-patient room with dedicated nursing care</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>We understand that visiting a healthcare facility often comes with many questions. To help you feel informed and comfortable, we've answered some of the most frequently asked questions about our services, appointments, and policies.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item">
+                <h3>What are your clinic hours?</h3>
+                <div class="faq-content">
+                  <p>Our clinic is open Monday to Friday from 8:00 AM to 8:00 PM and on Saturdays from 9:00 AM to 5:00 PM. We are closed on Sundays and public holidays.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do I need an appointment, or you accept walk-ins?</h3>
+                <div class="faq-content">
+                  <p>While we encourage scheduling an appointment to reduce wait times, we do accept walk-ins based on availability. Priority is given to patients with appointments.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What Insurance plans do you accept?</h3>
+                <div class="faq-content">
+                  <p>We accept most major health insurance providers. Please contact us to confirm if your specific insurance plan is accepted.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Are there any services provided for free?</h3>
+                <div class="faq-content">
+                  <p>Yes, we offer free services such as basic health consultations, blood pressure checks, and health education sessions. See our pricing section for more details.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I get my test results?</h3>
+                <div class="faq-content">
+                  <p>Your test results will be available within a few days. You can receive them via phone, email, or by visiting our center. For certain tests, results may take longer, and our staff will inform you of any delays.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What should I bring to my first appointment?</h3>
+                <div class="faq-content">
+                  <p>For your first appointment, please bring a valid ID, any insurance information, a list of current medications, and any previous medical records if available. This helps us provide the best possible care tailored to your health history.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Below is our physical location</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe style="border:0; width: 100%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127644.96867852623!2d36.896421!3d-1.225791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1591a2e9a35b%3A0x31a92b030cf1ccd5!2sKasarani%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1731340149939!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Nairobi GPO 00100</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+254 769 989 210</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>healinghopemedicalcenter@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="{% static 'index.html' %}" class="logo d-flex align-items-center">
+            <span class="sitename">Healing Hope Medical Center</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Nairobi GPO 00100</p>
+            <p>Nairobi, Kasarani</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254 769 989 210</span></p>
+            <p><strong>Email:</strong> <span>healinghopemedicalcenter@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+              <a href="https://www.google.com/search?client=firefox-b-d&q=twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.google.com/search?client=firefox-b-d&q=facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.google.com/search?client=firefox-b-d&q=instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.google.com/search?client=firefox-b-d&q=linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+{#        <div class="col-lg-2 col-md-3 footer-links">#}
+{#          <h4>Our Services</h4>#}
+{#          <ul>#}
+{#            <li><a href="#">Web Design</a></li>#}
+{#            <li><a href="#">Web Development</a></li>#}
+{#            <li><a href="#">Product Management</a></li>#}
+{#            <li><a href="#">Marketing</a></li>#}
+{#            <li><a href="#">Graphic Design</a></li>#}
+{#          </ul>#}
+{#        </div>#}
+
+{#        <div class="col-lg-2 col-md-3 footer-links">#}
+{#          <h4>Hic solutasetp</h4>#}
+{#          <ul>#}
+{#            <li><a href="#">Molestiae accusamus iure</a></li>#}
+{#            <li><a href="#">Excepturi dignissimos</a></li>#}
+{#            <li><a href="#">Suscipit distinctio</a></li>#}
+{#            <li><a href="#">Dilecta</a></li>#}
+{#            <li><a href="#">Sit quas consectetur</a></li>#}
+{#          </ul>#}
+{#        </div>#}
+
+{#        <div class="col-lg-2 col-md-3 footer-links">#}
+{#          <h4>Nobis illum</h4>#}
+{#          <ul>#}
+{#            <li><a href="#">Ipsam</a></li>#}
+{#            <li><a href="#">Laudantium dolorum</a></li>#}
+{#            <li><a href="#">Dinera</a></li>#}
+{#            <li><a href="#">Trodelas</a></li>#}
+{#            <li><a href="#">Flexo</a></li>#}
+{#          </ul>#}
+{#        </div>#}
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Healing Hope Medical Center</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <p>Designed by Developer Fred Nguro</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

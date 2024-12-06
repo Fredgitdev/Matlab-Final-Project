@@ -1,0 +1,41 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+{#You need a table to display the data row by row#}
+{#Last tableheading is action. To carry buttons#}
+{#have a loop to fetch data. mention the key while fetching values from the variable allappointments #}
+{#the row in loop keeps repeating until there is nothing to display    #}
+{#MENTION THE SPECIFIC VARIABLE AS IN THE DOUBLE CURLY BRACES MODELS.PY  AND STORE THEM IN X  #}
+{#in the last table data, 3 buttons will help delete/pay/edit the appointment date#}
+    <table class="table table-info container">
+    <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>Subject</th>
+        <th>message</th>
+        <th>Action</th>
+    </tr>
+
+    {% for y in contacts %}
+    	<tr>
+            <td>{{ y.name }}</td>
+            <td>{{ y.email }}</td>
+            <td>{{ y.subject }}</td>
+            <td>{{ x.message }}</td>
+            <td>
+                <a href="" class="btn btn-warning">Edit</a>
+                <a href="/delete/{{ y.id }}" class="btn btn-danger">Delete</a>
+                <a href="" class="btn btn-success">Pay</a>
+            </td>
+        </tr>
+    {% endfor %}
+
+
+
+
+
+    </table>
+
+
+{% endblock %}

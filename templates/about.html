@@ -1,0 +1,41 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+	<!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p>Healing Hope Medical Center is dedicated to delivering exceptional healthcare with compassion, integrity, and excellence. </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/hero-carousel/health4.jpg' %}" class="img-fluid" alt="">
+{#            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>#}
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Our mission.</h3>
+            <p class="fst-italic">
+              Our mission is to create a healing environment that nurtures both physical and emotional well-being, serving our community with a wide range of comprehensive medical services. At Healing Hope, we prioritize patient-centered care, fostering a supportive and understanding atmosphere for all.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Comprehensive Healthcare Services.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Experienced and Compassionate Team.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>State-of-the-Art Facilities.</span></li>
+            </ul>
+            <p>
+              At Healing Hope Medical Center, we are committed to creating a supportive environment where every patient feels valued and cared for. Our goal is to provide accessible, high-quality healthcare that addresses both immediate medical needs and long-term wellness. Whether you’re here for a routine checkup or a specialized procedure, we’re here to guide you every step of the way, ensuring a positive experience focused on your health and well-being.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+{% endblock %}
